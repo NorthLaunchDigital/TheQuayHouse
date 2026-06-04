@@ -1,0 +1,93 @@
+<!-- contact.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | The Quay House</title>
+  <meta name="description" content="Contact The Quay House in Kinlochbervie for bookings and enquiries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">Q</span>
+        <span class="brand-text">
+          <strong>The Quay House</strong>
+          <small>Kinlochbervie · Scottish Highlands</small>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container contact-grid">
+      <section class="contact-card">
+        <p class="eyebrow">Contact</p>
+        <h1>Enquiries and bookings</h1>
+        <p class="lead">Use the form to open your email app with the details pre-filled.</p>
+
+        <div class="contact-details">
+          <p><strong>Address:</strong> The Harbour, Kinlochbervie, IV27 4RR</p>
+          <p><strong>Phone:</strong> <a href="tel:+441971521734">+44 1971 521734</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@thequayhouse.co.uk">info@thequayhouse.co.uk</a></p>
+        </div>
+
+        <a class="btn btn-secondary" href="https://www.google.com/maps?q=The+Quay+House+Kinlochbervie" target="_blank" rel="noreferrer">Open Map</a>
+      </section>
+
+      <section class="contact-card">
+        <h2>Send an enquiry</h2>
+        <form id="contactForm" class="form">
+          <div class="field-row">
+            <label>
+              Full name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+          </div>
+
+          <div class="field-row">
+            <label>
+              Phone
+              <input type="tel" name="phone" />
+            </label>
+            <label>
+              Subject
+              <input type="text" name="subject" required />
+            </label>
+          </div>
+
+          <label>
+            Message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Open Email App</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> The Quay House</p>
+      <p>Kinlochbervie · Scottish Highlands</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
